@@ -1,0 +1,41 @@
+{
+  "name": "gmaps-image-scraper",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Lightweight browser-automated Google Maps image scraper & CLI downloader",
+  "main": "dist/scraper.js",
+  "types": "dist/scraper.d.ts",
+  "bin": {
+    "gmaps-scrape": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "scrape": "node dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "google-maps",
+    "scraper",
+    "image-downloader",
+    "browser-automation",
+    "crawler"
+  ],
+  "author": "Fadil",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "puppeteer": "^25.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "typescript": "^5.3.3"
+  }
+}

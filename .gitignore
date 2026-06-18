@@ -1,0 +1,16 @@
+# Dependency directories
+node_modules/
+
+# Build output
+dist/
+
+# Local environment variables
+.env
+.env.local
+
+# Scraped output downloaded by CLI
+scraped_images/
+
+# System files
+.DS_Store
+Thumbs.db
